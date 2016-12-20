@@ -1,0 +1,44 @@
+body, html {
+    min-height: 100%;
+    min-width: 100%;
+
+}
+
+body {
+    background-image: url("plane2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1 {
+    color: #bebebf;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.page-header {
+    border-bottom: 1px solid #565656;
+}
+
+a {
+    text-decoration: none;
+    border: solid 1px;
+    border-color: #565656;
+    color: #bebebf;
+    text-align: center;
+    width:100px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+i {
+    color: #bebebf;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
