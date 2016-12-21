@@ -42,3 +42,40 @@ i {
     margin-right: 50px;
     margin-bottom: 20px;
 }
+
+
+.modal-content {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 40%;
+    /*background-color: transparent;*/
+}
+
+#modalsubbtn:hover {
+    background-color: #383838;
+    color: #bebebf;
+}
+
+
+
+
+
+
+
+
+
+#weeklyspecial {
+    color: yellow;
+}
+
+.form-horizontal {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+label {
+    color: #bebebf;
+}
+
+#radiobtns {
+    margin-left: 20%;
+}
+
