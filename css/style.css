@@ -63,6 +63,7 @@ i {
 
 
 
+
 #weeklyspecial {
     color: yellow;
 }
@@ -79,3 +80,21 @@ label {
     margin-left: 20%;
 }
 
+.form-control {
+    background-color: transparent;
+}
+
+
+#searchbtn {
+    /*color: #bebebf;*/
+    /*background-color: transparent;*/
+    color: black;
+    background-color: #ffc107;
+    border-color: #ffc107;
+
+}
+#searchbtn:hover {
+    background-color: #8bc34a;
+    border-color: #8bc34a;
+    color: white;
+}

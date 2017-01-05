@@ -1,0 +1,74 @@
+/*font-family: 'Raleway', sans-serif;*/
+
+body {
+    color: #0078d2;
+    font-family: 'Raleway', sans-serif;
+    background-color: grey;
+
+}
+
+
+/*====================================================================================================================*/
+/*TEST TEST TEST TEST TEST*/
+/*====================================================================================================================*/
+
+/*TODO -testing out no padding on rows*/
+/*.row {*/
+    /*padding:0;*/
+    /*margin:0;*/
+/*}*/
+
+/*.row .col{*/
+    /*padding:0;*/
+    /*margin:0;*/
+/*}*/
+/*====================================================================================================================*/
+/*NAVBAR*/
+/*====================================================================================================================*/
+
+/* Navbar Logo Styling */
+.logo {
+    font-size: 20px;
+    padding-left:15px;
+    color: black;
+}
+
+
+/* Navbar Link Styling */
+nav ul a {
+    color: #0078d2;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/* Navbar Background Color */
+nav .nav-wrapper {
+    background-color: white;
+}
+
+
+/* Search Box Margrin Removal */
+.input-field input[type=search] {
+    margin-bottom:0;
+}
+
+
+/* Search Box Icon color */
+nav .input-field label i {
+    color: #0078d2;
+}
+
+nav .button-collapse i {
+    color: #0078d2;
+}
+
+
+/*====================================================================================================================*/
+/*PASSENGER */
+/*====================================================================================================================*/
+
+#passenger {
+    border:solid 2px;
+    border-color: black;;
+}
