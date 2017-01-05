@@ -122,7 +122,7 @@
 
 
                 <!--==========================================================================================================-->
-                <!-- MY TRIPS / CHECK-IN SECTION - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
+                <!-- FLIGHT STATUS - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
                 <!--==========================================================================================================-->
                 <div class="col s12 m8">
                     <!-- Teal page content  -->
@@ -131,31 +131,36 @@
                         <!--Top row with 3 columns-->
                         <div class="row">
                             <div class="input-field col s12 m4">
-                                <i class="material-icons prefix">account_circle</i>
+                                <i class="material-icons prefix">airplanemode_active</i>
                                 <input id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
+                                <label for="first_name">Flight Number</label>
                             </div>
                             <div class="input-field col s12 m4">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
+                                <i class="material-icons prefix">add_location</i>
+                                <input type="text" id="autocomplete-input-from_location" class="autocomplete">
+                                <label for="autocomplete-input-from_location">From</label>
                             </div>
                             <div class="input-field col s12 m4">
-                                <i class="material-icons prefix">receipt</i>
-                                <input id="record_locator" type="text" class="validate">
-                                <label for="record_locator">Record Locator</label>
+                                <i class="material-icons prefix">add_location</i>
+                                <input type="text" id="autocomplete-input-to_location" class="autocomplete">
+                                <label for="autocomplete-input-to_location">To</label>
                             </div>
                         </div>
                         <!--Bottom row with 6 column offset-->
                         <div class="row">
-                            <div class="col s6 offset-s6 right-align">
+                            <div class="input-field col s6 offset-s3 right-align">
+                                <i class="material-icons prefix">date_range</i>
+                                <input id="from_date" type="date" class="datepicker">
+                                <label for="from_date">From</label>
+                            </div>
+                            <div class="col s6 offset-s3 right-align">
                                 <a class="waves-effect waves-light btn">button</a>
                             </div>
                         </div>
                     </form>
                 </div>
                 <!--==========================================================================================================-->
-                <!-- MY TRIPS / CHECK-IN SECTION - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
+                <!-- FLIGHT STATUS / CHECK-IN SECTION - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
                 <!--==========================================================================================================-->
 
 
@@ -186,10 +191,28 @@
 <script>
     $( document ).ready(function(){
 
-//        Navbar slide out function
+        //Navbar slide out function
         $(".button-collapse").sideNav();
 
-    })
+        //Date Picker
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+
+        //Auto Complete
+        $('input.autocomplete').autocomplete({
+            data: {
+                "Apple": null,
+                "Microsoft": null,
+                "Google": 'http://placehold.it/250x250'
+            }
+        });
+
+
+
+
+    });
 
     $(document).ready(function(){
         $('.slider').slider({full_width: true});
