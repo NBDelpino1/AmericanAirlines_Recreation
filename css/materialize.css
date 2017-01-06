@@ -7,7 +7,9 @@ body {
 
 }
 
-
+/*.aa_blue {*/
+    /*background-color: #0078d2;;*/
+/*}*/
 /*====================================================================================================================*/
 /*TEST TEST TEST TEST TEST*/
 /*====================================================================================================================*/
@@ -68,30 +70,36 @@ nav .button-collapse i {
 /*PASSENGER */
 /*====================================================================================================================*/
 
-.passenger {
-    border:solid 2px;
-    border-color: black;;
-}
+/*TODO-Need to remove the class passenger from the divs - this was for testing only*/
+/*.passenger {*/
+    /*border:solid 2px;*/
+    /*border-color: black;;*/
+/*}*/
 
-
+/*TODO - do NOT delete this I may still want to ad padd to form*/
 form {
-    padding:15px;
+    /*padding:15px;*/
 }
 
 .btn {
     background-color: #0078d2;
-    width:150px;
+    width:200px;
 }
 
 
 /*tab link color*/
 .tabs .tab a {
-    color: grey;
+    color: #0078d2;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-    color: #0078d2;
+    color: white;
 
+}
+
+
+.tab:hover {
+    background-color: #0078d2;
 }
 
 /*tab line under link color*/
@@ -99,3 +107,71 @@ form {
     background-color: #0078d2;
 }
 
+
+/*Flight Info Section */
+#flight_info_section {
+    /*background-color: grey;*/
+    /*border:solid 1px;*/
+    /*border-color: #0078d2;*/
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;;
+
+}
+
+/*TODO-Look into removing tis padding class*/
+/*row padding test*/
+.row .col.s12 .add_pad_left {
+    /*padding-left:40px;*/
+    background-color: grey;
+}
+
+
+/*.flight_info_head {*/
+    /*background-color: #0078d2;*/
+/*}*/
+
+
+
+
+#loginsection {
+    /*background-color: grey;*/
+    background-color: #0078d2;
+    color: white;
+    padding: 15px;
+}
+
+.black_text {
+    color: black;
+
+}
+
+
+/*CHECK BOX COLOR TEXT*/
+.input-field.col label {
+    color: black;
+}
+/*CHECK BOX  BORDER COLOR*/
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    border-color: black;
+}
+
+.row .col.m10 {
+    padding-top:5px;
+}
+
+
+/*IMP PADDING ADJUST THE CLOSES OF ALL ROWS*/
+.container .row {
+    margin-bottom: 0;
+}
+
+/*FORM STLYE*/
+.input-field .prefix ~ input, .input-field .prefix ~ textarea, .input-field .prefix ~ label, .input-field .prefix ~ .validate ~ label, .input-field .prefix ~ .autocomplete-cont {
+    margin-bottom:15px;
+}
+
+
+#login_button {
+    width:160px;
+}
