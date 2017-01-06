@@ -68,7 +68,34 @@ nav .button-collapse i {
 /*PASSENGER */
 /*====================================================================================================================*/
 
-#passenger {
+.passenger {
     border:solid 2px;
     border-color: black;;
 }
+
+
+form {
+    padding:15px;
+}
+
+.btn {
+    background-color: #0078d2;
+    width:150px;
+}
+
+
+/*tab link color*/
+.tabs .tab a {
+    color: grey;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #0078d2;
+
+}
+
+/*tab line under link color*/
+.tabs .indicator {
+    background-color: #0078d2;
+}
+

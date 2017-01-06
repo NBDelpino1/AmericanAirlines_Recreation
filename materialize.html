@@ -122,44 +122,167 @@
 
 
                 <!--==========================================================================================================-->
-                <!-- FLIGHT STATUS - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
+                <!-- BOOK FLIGHT SECTION  - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
                 <!--==========================================================================================================-->
                 <div class="col s12 m8">
                     <!-- Teal page content  -->
-                    <!--MY TRIPS / CHECK-IN SECTION-->
-                    <form id="passenger">
-                        <!--Top row with 3 columns-->
-                        <div class="row">
-                            <div class="input-field col s12 m4">
-                                <i class="material-icons prefix">airplanemode_active</i>
-                                <input id="first_name" type="text" class="validate">
-                                <label for="first_name">Flight Number</label>
-                            </div>
-                            <div class="input-field col s12 m4">
-                                <i class="material-icons prefix">add_location</i>
-                                <input type="text" id="autocomplete-input-from_location" class="autocomplete">
-                                <label for="autocomplete-input-from_location">From</label>
-                            </div>
-                            <div class="input-field col s12 m4">
-                                <i class="material-icons prefix">add_location</i>
-                                <input type="text" id="autocomplete-input-to_location" class="autocomplete">
-                                <label for="autocomplete-input-to_location">To</label>
-                            </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s3"><a href="#test1" class="active">Round Trip</a></li>
+                                <li class="tab col s3"><a href="#test2">One Way</a></li>
+                                <li class="tab col s3"><a href="#test4">R/Trip &amp; Hotel</a></li>
+                            </ul>
+                        </div>
+                        <!-- ROUND TRIP SECTION-->
+                        <div id="test1" class="col s12">
+                            <form class="passenger">
+                                <!-- TOP ROW -->
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">add_location</i>
+                                        <input type="text" id="autocomplete-input-round_trip_from_location" class="autocomplete">
+                                        <label for="autocomplete-input-round_trip_from_location">From</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">add_location</i>
+                                        <input type="text" id="autocomplete-input-round_trip_to_location" class="autocomplete">
+                                        <label for="autocomplete-input-round_trip_to_location">To</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">people outline</i>
+                                        <select>
+                                            <option value="" disabled selected>Number of passengers</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <label></label>
+                                    </div>
+                                </div>
+                                <!-- BOTTOM ROW-->
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">date_range</i>
+                                        <input id="round-trip-depart_date" type="date" class="datepicker">
+                                        <label for="round-trip-depart_date">Depart</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">date_range</i>
+                                        <input id="round-trip-return_date" type="date" class="datepicker">
+                                        <label for="round-trip-return_date">Return</label>
+                                    </div>
+                                    <div class="input-field col s12 m4 center-align">
+                                        <a class="waves-effect waves-light btn">Search</a>
+                                        <label for="search"></label>
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
 
-                        <div class="row">
-                            <div class="input-field col s12 m4 left-align">
-                                <i class="material-icons prefix">date_range</i>
-                                <input id="from_date" type="date" class="datepicker">
-                                <label for="from_date">From</label>
-                            </div>
-                            <div class="input-field  col s12 m8 left-align">
-                                <a class="waves-effect waves-light btn">button</a>
-                            </div>
-                        </div>
+                        <!--ONE WAY SECTION-->
+                        <div id="test2" class="col s12">
+                            <form class="passenger">
+                                <!-- TOP ROW -->
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">add_location</i>
+                                        <input type="text" id="autocomplete-input-one_way_from_location" class="autocomplete">
+                                        <label for="autocomplete-input-one_way_from_location">From</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">add_location</i>
+                                        <input type="text" id="autocomplete-input-one_way_to_location" class="autocomplete">
+                                        <label for="autocomplete-input-one_way_to_location">To</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">people outline</i>
+                                        <select>
+                                            <option value="" disabled selected>Number of passengers</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <label></label>
+                                    </div>
+                                </div>
+                                <!-- BOTTOM ROW-->
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">date_range</i>
+                                        <input id="one_way_depart_date" type="date" class="datepicker">
+                                        <label for="one_way_depart_date">Depart</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <!--<i class="material-icons prefix">date_range</i>-->
+                                        <!--<input id="to_date" type="date" class="datepicker">-->
+                                        <!--<label for="to_date">To</label>-->
+                                    </div>
+                                    <div class="input-field col s12 m4 center-align">
+                                        <a class="waves-effect waves-light btn">Search</a>
+                                        <label for="autocomplete-input-to_location"></label>
+                                    </div>
+                                </div>
 
-                    </form>
+                            </form>
+                        </div>
+                        <div id="test4" class="col s12">
+                            <form class="passenger">
+                                <!-- TOP ROW -->
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">add_location</i>
+                                        <input type="text" id="autocomplete-input-from_location" class="autocomplete">
+                                        <label for="autocomplete-input-from_location">From</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">add_location</i>
+                                        <input type="text" id="autocomplete-input-to_location" class="autocomplete">
+                                        <label for="autocomplete-input-to_location">To</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">people outline</i>
+                                        <select>
+                                            <option value="" disabled selected>Number of passengers</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <label></label>
+                                    </div>
+                                </div>
+                                <!-- BOTTOM ROW-->
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">date_range</i>
+                                        <input id="from_date" type="date" class="datepicker">
+                                        <label for="from_date">From</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">date_range</i>
+                                        <input id="to_date" type="date" class="datepicker">
+                                        <label for="to_date">To</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <i class="material-icons prefix">airplanemode_active</i>
+                                        <select>
+                                            <option value="" disabled selected>Fare Preference</option>
+                                            <option value="1">Coach</option>
+                                            <option value="2">Business</option>
+                                            <option value="3">First</option>
+                                        </select>
+                                        <label></label>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
+
                 <!--==========================================================================================================-->
                 <!-- FLIGHT STATUS / CHECK-IN SECTION - WILL UPDATE DYNAMICALLY DEPENDING ON USER TAB SELECTION-->
                 <!--==========================================================================================================-->
@@ -168,6 +291,9 @@
             </div>
         </div>
     </main>
+
+
+
 
 
 
@@ -201,7 +327,7 @@
             selectYears: 15 // Creates a dropdown of 15 years to control year
         });
 
-        //Auto Complete
+        //Auto Complete - Book Trip & XXX Section
         $('input.autocomplete').autocomplete({
             data: {
                 "Apple": null,
@@ -210,13 +336,21 @@
             }
         });
 
-
+        //Materialize Select Drop Down Option - Book Trip Section
+        $('select').material_select();
 
 
     });
 
     $(document).ready(function(){
         $('.slider').slider({full_width: true});
+    });
+
+
+
+
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
     });
 </script>
 
