@@ -7,9 +7,15 @@ body {
 
 }
 
-/*.aa_blue {*/
-    /*background-color: #0078d2;;*/
-/*}*/
+.aa_blue {
+    color: #0078d2;;
+}
+
+
+.black_text {
+    color: black;
+
+}
 /*====================================================================================================================*/
 /*TEST TEST TEST TEST TEST*/
 /*====================================================================================================================*/
@@ -141,10 +147,7 @@ form {
     padding: 15px;
 }
 
-.black_text {
-    color: black;
 
-}
 
 
 /*CHECK BOX COLOR TEXT*/
@@ -173,5 +176,48 @@ form {
 
 
 #login_button {
-    width:160px;
+    width:140px;
+}
+
+/*CAROUSEL FONT WEIGHT*/
+
+.test {
+    font-weight:700;
+}
+
+
+
+/*CAROUSEL DOT COLOR*/
+.slider .indicators .indicator-item.active {
+    background-color: #0078d2;
+}
+
+/*PICKER BODY BACKGROUNG COLOR*/
+.picker__date-display {
+    background-color: #0078d2;
+}
+
+/*PICKER HEAD BACKGROUNG COLOR*/
+.picker__weekday-display {
+    background-color: #eceff1;
+    color: black;
+}
+
+/*Picker Today and Close botton color*/
+.picker__close, .picker__today {
+    color: #0078d2;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+    background-color: #0078d2;
+}
+
+/*Picker actual date color*/
+.picker__day.picker__day--today {
+    color: #0078d2;
+}
+
+/*Picker date month change arrow*/
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    background-color: #eceff1;
 }
