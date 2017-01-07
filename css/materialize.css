@@ -16,6 +16,16 @@ body {
     color: black;
 
 }
+
+a {
+    color: #0078d2;;
+}
+
+/*UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK*/
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
 /*====================================================================================================================*/
 /*TEST TEST TEST TEST TEST*/
 /*====================================================================================================================*/
@@ -45,17 +55,18 @@ body {
 /* Navbar Link Styling */
 nav ul a {
     color: #0078d2;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: large;
 }
 
 
-/* Navbar Background Color */
-nav .nav-wrapper {
-    background-color: white;
-
+/*NAVBAR LINKS CASE SETTING*/
+.remove_assigned_case {
+    text-transform: none;
 
 }
+
+
 
 /* Search Box Margrin Removal */
 .input-field input[type=search] {
@@ -184,6 +195,7 @@ form {
 /*CHECK BOX COLOR TEXT*/
 .input-field.col label {
     color: black;
+    font-size: 11px;
 }
 /*CHECK BOX  BORDER COLOR*/
 [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
@@ -199,6 +211,10 @@ form {
     margin-bottom: 0;
 }
 
+/*MAKE FORM SEE THROUGH BY REMOVING BACKGROUND COLOR*/
+#flight_info_section {
+    background-color: white;
+}
 /*====================================================================================================================*/
 /* CAROUSEL */
 /*====================================================================================================================*/
@@ -211,7 +227,7 @@ form {
 /*CAROUSEL FONT WEIGHT*/
 
 .test {
-    font-weight:700;
+    font-weight:400;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 /*====================================================================================================================*/
@@ -249,31 +265,6 @@ form {
 
 
 
-
-/*====================================================================================================================*/
-/*DIV ONTOP ANOTHER TEST*/
-/*====================================================================================================================*/
-/*#positiontest {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: relative;*/
-/*}*/
-/*#flight_section_wrapper{*/
-    /*width: 60%;*/
-    /*height: 38%;*/
-    /*position: absolute;*/
-    /*top:47%;*/
-    /*left: 20%;*/
-
-/*}*/
-/*!*brings div ontop of carousel*!*/
-/*#flight_section_wrapper {*/
-    /*z-index: 10;*/
-/*}*/
-
-
-
-
 /*====================================================================================================================*/
 /* NEWS / OFFERS */
 /*====================================================================================================================*/
@@ -298,14 +289,14 @@ form {
 /*====================================================================================================================*/
 /* PAGE FOOTER */
 /*====================================================================================================================*/
-/*FOOTER BACKGROUND COLOR*/
+/* BACKGROUND COLOR AND FONT SIZE */
 footer.page-footer, footer.page-footer .footer-copyright {
     /*background-color: #1e589a;*/
     background-color: #d0dae0;
     font-size: 12px;
 }
 
-/*BOTTOM FOOTER ICONS*/
+/* BOTTOM FOOTER ICONS */
 .footer_icon {
     font-size:30px;
     margin-left: 5px;
@@ -313,14 +304,47 @@ footer.page-footer, footer.page-footer .footer-copyright {
     color: #1e589a;
 }
 
-/*BOTOOM FOOTER TEXT*/
+/* BOTOM FOOTER TEXT COLOR */
 .footer-copyright .container {
     color: #1e589a;
 }
 
 
-/*UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK*/
-a:hover {
-    color: black;
-    text-decoration: underline;
+
+
+
+
+/*====================================================================================================================*/
+/*DIV ONTOP ANOTHER TEST*/
+/*====================================================================================================================*/
+#poistion1 {
+width: 100%;
+height: 100%;
+position: relative;
+}
+#position2{
+width: 60%;
+height: 38%;
+position: absolute;
+top:49%;
+left: 19.5%;
+
+}
+/*brings div ontop of carousel*/
+#position2 {
+z-index: 10;
+}
+
+/*makes div large again for smaller screens*/
+@media only screen and (max-width: 500px) {
+    #position2{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }

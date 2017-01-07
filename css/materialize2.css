@@ -1,0 +1,298 @@
+/*====================================================================================================================*/
+/* GENERAL BODY STYLING */
+/*====================================================================================================================*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* SITE PRIMARY COLOR */
+.aa_blue {
+    color:#0078d2;
+}
+
+/* CREATE SPACE BETWEEN SECTIONS */
+#news_offers, #todays_specials, #footer_section {
+    margin-top:90px;
+}
+
+/*SITE LINK TEXT COLOR*/
+a {
+    color: #0078d2;;
+}
+
+/* UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK */
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/*====================================================================================================================*/
+/* DIV POSITIONING ON PAGE */
+/*====================================================================================================================*/
+/* CAROUSEL */
+#poistion1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* MAIN CONTENT */
+#position2{
+    width: 60%;
+    position: absolute;
+    top:40%;
+    left: 20%;
+
+}
+/* LIFTS MAIN COMTENT UP OFF PAGE */
+#position2 {
+    z-index: 10;
+}
+
+/* HANDLE MOBILE VIEW */
+@media only screen and (max-width: 500px) {
+    #position2{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*====================================================================================================================*/
+/*NAVBAR*/
+/*====================================================================================================================*/
+
+/* SEARCH ICON COLOR */
+nav .input-field label i {
+    color:#0078d2;
+}
+
+/* NAVBAR LINK TEXT SIZE */
+nav ul a {
+    color: #0078d2;
+    font-weight:bolder;
+    font-size: large;
+}
+
+/* SIDE NAV LINK COLOR */
+.side-nav a {
+    color:#0078d2;
+}
+
+/* NAVBAR LINKS CASE SETTING */
+.remove_assigned_case {
+    text-transform: none;
+
+}
+
+/*====================================================================================================================*/
+/* CAROUSEL */
+/*====================================================================================================================*/
+
+/*CAROUSEL TEXT STYLE*/
+.carousel_text_style {
+    font-weight:400;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/*HIDE CAROUSEL CONTROLS*/
+.slider .indicators .indicator-item, .slider .indicators .indicator-item.active {
+    background-color: transparent;
+}
+
+/*====================================================================================================================*/
+/* LEFT FORM */
+/*====================================================================================================================*/
+
+/*LEFT FORM  */
+.aa_blue_gradient {
+
+    /*TEST*/
+    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+98,207cca+100,7db9e8+100 *!*/
+    /*background: rgb(30,87,153); !* Old browsers *!*/
+    /*background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 98%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%); !* FF3.6-15 *!*/
+    /*background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 98%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+    /*background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 98%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); !* IE6-9 *!*/
+
+    /*REVERSE*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,207cca+0,2989d8+2,1e5799+100 */
+    background: rgb(125,185,232); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(125,185,232,1) 0%, rgba(32,124,202,1) 0%, rgba(41,137,216,1) 2%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+/*FORM PADDING*/
+form {
+    padding:10px;
+    padding-bottom: 30px;
+}
+
+
+.blue-grey.lighten-5 {
+    margin-top: 10px;
+}
+
+/*CHECK BOX  BORDER COLOR*/
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    border-color: black;
+}
+
+/*CHECK BOX TEXT SIZE*/
+.input-field.col label {
+    font-size: 11px;
+}
+
+/* LOGIN BUTTON */
+#login_button {
+    width:130px;
+}
+
+/* IMP PADDING ADJUST THE CLOSES OF ALL ROWS */
+.container .row {
+    margin-bottom: 0;
+}
+
+/*====================================================================================================================*/
+/* RIGHT FORM */
+/*====================================================================================================================*/
+
+/*TODO _ THIS COLOR SGHOULD MATCH UP TO THE LEFT FORM*/
+/* TAB LINKS COLOR ON HOVER */
+.tab:hover {
+    background-color: #0078d2;
+}
+
+
+/* TAB LINKS UNDERLINE COLOR */
+.tabs .indicator {
+    background-color: #0078d2;
+}
+
+/* HEADER LINKS TEXT COLOR */
+.tabs .tab a {
+    color: #0078d2;
+}
+
+/* HEADER LINKS TEXT COLOR ON HOVER */
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: black;
+}
+
+/* RIGHT FORM ICONS */
+.input-field .pref {
+
+}
+
+/*====================================================================================================================*/
+/* NEWS AND OFFERS && TODAY'S SPECIALS */
+/*====================================================================================================================*/
+
+/*SMALL OPEN LINK FONT SIZE*/
+.small_open_icon {
+    font-size: 13px;
+}
+
+.small_local_offer_icon {
+    font-size: 13px;
+}
+
+/*====================================================================================================================*/
+/* PAGE FOOTER */
+/*====================================================================================================================*/
+/* BACKGROUND COLOR AND FONT SIZE */
+footer.page-footer, footer.page-footer .footer-copyright {
+    /*background-color: #1e589a;*/
+    background-color: #d0dae0;
+    font-size: 12px;
+}
+
+/* BOTTOM FOOTER ICONS */
+.footer_icon {
+    font-size:30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #1e589a;
+}
+
+/* BOTOM FOOTER TEXT COLOR */
+.footer-copyright .container {
+    color: #1e589a;
+}
+
+
+/*====================================================================================================================*/
+/* GENERAL BUTTONS - THOSE WITH DIFF SIZING HAVE BEEN ASSIGNED AN ID */
+/*====================================================================================================================*/
+.btn {
+    background-color: #0078d2;
+    width:200px;
+}
+
+/*====================================================================================================================*/
+/* DATE PICKER STYLING */
+/*====================================================================================================================*/
+/*PICKER BODY BACKGROUND COLOR*/
+.picker__date-display {
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+/*PICKER HEAD BACKGROUNG COLOR*/
+.picker__weekday-display {
+    background-color: #eceff1;
+    color: black;
+}
+
+/*Picker Today and Close botton color*/
+.picker__close, .picker__today {
+    color: #0078d2;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+    background-color: #0078d2;
+}
+
+/*Picker actual date color*/
+.picker__day.picker__day--today {
+    color: #0078d2;
+}
+
+/*Picker date month change arrow*/
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    background-color: #eceff1;
+}
+
+
+
+
+
+
+
+
+
+/*INPUT BOX BORDER*/
+.input-field .prefix ~ input {
+    border:solid 1px;
+
+}
+
+/*INPUT PLACEHOLDER PADDING*/
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+    padding-left:10px;
+
+}
+
+/*LOGIN PLACEHOLDER PADDING*/
+.input-field .prefix ~ input {
+    padding-left:10px;
+}
+
+.select-wrapper input.select-dropdown {
+    border:solid 1px;
+    padding-left:10px;
+}
+
+
+
