@@ -33,7 +33,5 @@ $( document ).ready(function(){
     // BOX DROP DOWN SELECTION
     $('select').material_select();
 
-
-
 });
 
