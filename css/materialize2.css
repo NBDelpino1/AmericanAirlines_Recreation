@@ -3,7 +3,14 @@
 /*====================================================================================================================*/
 body {
     font-family: 'Raleway', sans-serif;
+    padding-top:50px;
 }
+
+/*TODO _ NEED MDEIA QUERY TO ADJUST BODY PADDING TOP*/
+/*TODO _ NEED MDEIA QUERY TO ADJUST BODY SECTIONS PADDING SIDES*/
+
+
+
 
 /* SITE PRIMARY COLOR */
 .aa_blue {
@@ -17,7 +24,9 @@ body {
 
 /*SITE LINK TEXT COLOR*/
 a {
-    color: #0078d2;;
+    color: #0078d2;
+    font-weight:bolder;
+
 }
 
 /* UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK */
@@ -40,7 +49,7 @@ a:hover {
 #position2{
     width: 60%;
     position: absolute;
-    top:40%;
+    top:45%;
     left: 20%;
 
 }
@@ -56,6 +65,7 @@ a:hover {
         width: 100%;
         height: 100%;
     }
+
 }
 
 /*====================================================================================================================*/
