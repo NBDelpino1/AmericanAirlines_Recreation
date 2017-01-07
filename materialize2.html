@@ -113,7 +113,7 @@
     <!--LEFT SIDE OF FLIGHT INFO SECTION-->
     <!--=============================================================================================================-->
     <!-- Page Layout here -->
-    <div class="row z-depth-3">
+    <div class="row z-depth-4">
         <!--LEFT SIDE OF FLIGHT INFO SECTION-->
         <div class="col s12 m4 aa_blue_gradient">
             <!-- Grey navigation panel -->
@@ -159,11 +159,18 @@
         <div class="col s12 m8 #ffffff white">
             <!-- Teal page content  -->
             <div class="row">
-                <div class="col s12">
-                    <ul class="tabs #cfd8dc blue-grey lighten-5">
-                        <li class="tab col s3"><a href="#book_flights_section" class="active">Book Flights</a></li>
-                        <li class="tab col s3"><a href="#my_trips_checkin_section">Check In</a></li>
-                        <li class="tab col s3"><a href="#flight_status_section">Flight Status</a></li>
+                <!--<div class="col s12">-->
+                    <!--<ul class="tabs #cfd8dc blue-grey lighten-5">-->
+                        <!--<li class="tab col s3"><a href="#book_flights_section" class="active">Book Flights</a></li>-->
+                        <!--<li class="tab col s3"><a href="#my_trips_checkin_section">Check In</a></li>-->
+                        <!--<li class="tab col s3"><a href="#flight_status_section">Flight Status</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <div class="col s12" id="menu">
+                    <ul class="tabs #cfd8dc blue-grey lighten-5 current_page_itemm">
+                        <li class="tab col s3 current_page_item"><a href="#book_flights_section" class="active white-text">Book Flights</a></li>
+                        <li class="tab col s3"><a href="#my_trips_checkin_section" class="white-text">Check In</a></li>
+                        <li class="tab col s3"><a href="#flight_status_section" class="white-text">Flight Status</a></li>
                     </ul>
                 </div>
                 <div id="book_flights_section" class="col s12">
@@ -214,7 +221,7 @@
                                         <input id="round-trip-return_date" type="date" class="datepicker">
                                         <label for="round-trip-return_date">Return</label>
                                     </div>
-                                    <div class="input-field col s12 m4 center-align">
+                                    <div class="input-field col s12 m4 right-align " id="test">
                                         <a class="waves-effect waves-light btn">Search</a>
                                         <label></label>
                                     </div>
@@ -581,6 +588,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <!--My scripts-->
 <script src="js/app.js"></script>
+
+<!--<script>-->
+    <!--$(document).ready(function () {-->
+        <!--$('#menu ul li a').click(function (ev) {-->
+            <!--$('#menu ul li').removeClass('selected');-->
+            <!--$(ev.currentTarget).parent('li').addClass('selected');-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 
 
 </body>

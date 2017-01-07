@@ -6,6 +6,12 @@ $( document ).ready(function(){
     // FLIGHT SECTION
     $('ul.tabs').tabs();
 
+    // ENABLE TAB STYLING WHEN IN USE
+    $('#menu ul li a').click(function (ev) {
+        $('#menu ul li').removeClass('selected');
+        $(ev.currentTarget).parent('li').addClass('selected');
+    });
+
     // NAVBAR SLIDE OUT
     $(".button-collapse").sideNav();
 
@@ -26,6 +32,8 @@ $( document ).ready(function(){
 
     // BOX DROP DOWN SELECTION
     $('select').material_select();
+
+
 
 });
 

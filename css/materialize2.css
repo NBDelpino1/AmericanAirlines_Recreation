@@ -8,6 +8,7 @@ body {
 
 /*TODO _ NEED MDEIA QUERY TO ADJUST BODY PADDING TOP*/
 /*TODO _ NEED MDEIA QUERY TO ADJUST BODY SECTIONS PADDING SIDES*/
+/*TODO_ BUTTON BACKGROUND AND POSITIONING*/
 
 
 
@@ -22,18 +23,19 @@ body {
     margin-top:90px;
 }
 
-/*SITE LINK TEXT COLOR*/
+/*!*SITE LINK TEXT COLOR*!*/
 a {
     color: #0078d2;
     font-weight:bolder;
 
 }
 
-/* UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK */
+/*!* UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK *!*/
 a:hover {
     color: black;
     text-decoration: underline;
 }
+
 
 /*====================================================================================================================*/
 /* DIV POSITIONING ON PAGE */
@@ -93,6 +95,12 @@ nav ul a {
 .remove_assigned_case {
     text-transform: none;
 
+}
+
+
+nav .brand-logo {
+    font-weight:bolder;
+    /*font-size: 25px;*/
 }
 
 /*====================================================================================================================*/
@@ -176,10 +184,7 @@ form {
 }
 
 
-/* TAB LINKS UNDERLINE COLOR */
-.tabs .indicator {
-    background-color: #0078d2;
-}
+
 
 /* HEADER LINKS TEXT COLOR */
 .tabs .tab a {
@@ -195,6 +200,43 @@ form {
 .input-field .pref {
 
 }
+
+/*==================================*/
+/*TABS STYLING WHEN IN USE*/
+/* TAB BEFORE CLICK */
+#menu li {
+    /*background: black;*/
+}
+
+
+/* TAB AFTER CLICK */
+#menu ul li.selected {
+    background-color: #0078d2;
+    color:#FFFFFF;
+}
+
+
+/* TAB ON HOVER */
+#menu a:hover {
+    background-color: #0078d2;
+    color:#FFFFFF;
+}
+
+
+/* TAB ON CLICK */
+#menu a:active {
+    background-color: yellow;
+    color:white;
+}
+
+/*TODO _ THIS COLOR SHOULD MATCH UP TO THE TOP TAB COLOR*/
+/* TAB LINKS UNDERLINE COLOR */
+.tabs .indicator {
+    background-color: red;
+}
+/*==================================*/
+
+
 
 /*====================================================================================================================*/
 /* NEWS AND OFFERS && TODAY'S SPECIALS */
@@ -303,6 +345,13 @@ footer.page-footer, footer.page-footer .footer-copyright {
     border:solid 1px;
     padding-left:10px;
 }
+
+
+
+#test {
+    /*margin-left: 5px;*/
+}
+
 
 
 
