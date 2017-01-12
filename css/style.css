@@ -55,29 +55,40 @@ a:hover {
     position: relative;
 }
 
-/*TODO remove position comment so div moves back into place*/
-/* MAIN CONTENT */
-#position2{
-    width: 60%;
-    position: absolute;
-    top:45%;
-    left: 20%;
+/*handle laptop*/
+@media only screen and (min-width: 768px)  {
 
+    #position2 {
+        width:80%;
+        top:65%;
+        left:10%;
+        position: absolute;
+
+    }
+
+    html {
+        font-size: 12px;
+    }
 }
-/* LIFTS MAIN COMTENT UP OFF PAGE */
+
+/*handle desktop*/
+@media only screen and (min-width: 1900px) {
+
+    #position2{
+        width: 60%;
+        position: absolute;
+        top:47%;
+        left: 20%;
+
+    }
+}
+
+/* GIVE POSITION TWO A SHADOW SO IT APPEARS TO FLOAT ABOVE POSITION 1 */
 #position2 {
     z-index: 10;
 }
 
-/* HANDLE MOBILE VIEW */
-@media only screen and (max-width: 500px) {
-    #position2{
-        position: static;
-        width: 100%;
-        height: 100%;
-    }
 
-}
 
 /*====================================================================================================================*/
 /*NAVBAR*/
@@ -124,7 +135,7 @@ nav .brand-logo {
 
 /*HIDE CAROUSEL CONTROLS*/
 .slider .indicators .indicator-item, .slider .indicators .indicator-item.active {
-    background-color: yellow;
+    background-color: #eceff1;
 }
 
 /*====================================================================================================================*/
@@ -296,7 +307,7 @@ form {
 
 /* TAB ON CLICK */
 #menu a:active {
-    background-color: yellow;
+    background-color: #eceff1;
     color:white;
 }
 
@@ -411,11 +422,19 @@ footer.page-footer, footer.page-footer .footer-copyright {
 /*====================================================================================================================*/
 /* QUICK FIX HACKS */
 /*====================================================================================================================*/
-
+/*TODO-handle this!!!*/
 /*TODAYS SPECIALS WAS PUSHING OUT*/
 #quickmargin {
     margin-left: 10px;
 }
+
+
+
+.slider .indicators .indicator-item, .slider .indicators .indicator-item.active {
+    background-color:#0078d2;;
+}
+
+
 
 
 
