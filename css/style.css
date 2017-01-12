@@ -70,6 +70,11 @@ a:hover {
     html {
         font-size: 12px;
     }
+
+    #login_button {
+        margin-left: 27px;
+    }
+
 }
 
 
@@ -88,6 +93,13 @@ a:hover {
     html {
         font-size: 12px;
     }
+
+   /*TODO:need media query to handle search button left margin-multiple serach buttons so add some id man jeez*/
+    #login_button {
+        margin-left: 0;
+
+    }
+
 }
 
 /*handle desktop*/
@@ -100,6 +112,13 @@ a:hover {
         left: 20%;
 
     }
+
+    #login_button {
+        margin-left: 5px;
+        width: 40%;
+    }
+
+
 }
 
 /* GIVE POSITION TWO A SHADOW SO IT APPEARS TO FLOAT ABOVE POSITION 1 */
