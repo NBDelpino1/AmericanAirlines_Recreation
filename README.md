@@ -1,6 +1,10 @@
-### Attempt at recreating the American Airlines Website.
-The most challenging obstacles faced were the form complexity and div positioning so the content sits on top of the carousel. 
-Note - Adobe images had not been licensed yet hence the watermark. I have not yet decided on the final images which will also determine the advertisement ads color.
+#### Recreation of the American Airlines Website.
+
 
 ![image](https://cloud.githubusercontent.com/assets/18251657/21745337/873504f8-d4f7-11e6-8ada-c7c9d104fba7.png)
 ![image](https://cloud.githubusercontent.com/assets/18251657/21745341/914cbf3a-d4f7-11e6-9fa9-7004a204cdd0.png)
+![image](https://cloud.githubusercontent.com/assets/18251657/21916030/ac9bebe0-d90b-11e6-8de1-f1f857a071e1.png)
+![image](https://cloud.githubusercontent.com/assets/18251657/21916035/b0a3c334-d90b-11e6-9af6-0ae6c478daba.png)
+![image](https://cloud.githubusercontent.com/assets/18251657/21916040/b38fb99a-d90b-11e6-98f5-b0ae1d2ab830.png)
+![image](https://cloud.githubusercontent.com/assets/18251657/21916042/b69cd7da-d90b-11e6-8131-d44fee8dd132.png)
+
