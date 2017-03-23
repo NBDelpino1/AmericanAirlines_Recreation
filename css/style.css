@@ -5,10 +5,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    padding-top:50px;
 }
-
-
 
 
 @media screen and (max-width: 480px) {
@@ -83,19 +80,13 @@ a:hover {
 .absolute {
     position: absolute;
     width:100%;
-    /*margin:auto;*/
-    top:90%;
-    /*left:0;*/
-    /*right:0;*/
-    /*bottom:0;*/
-    /*z-index: 0;*/
+    top:93%;
 }
-
 
 @media screen and (min-width: 480px) {
     .absolute {
         position: absolute;
-        width:90%;
+        width:95%;
         margin:auto;
         top:80%;
         left:0;
@@ -104,9 +95,16 @@ a:hover {
         z-index: 2;
     }
 }
+
 /*====================================================================================================================*/
                                                 /* Navbar up top */
 /*====================================================================================================================*/
+
+@media screen and (min-width: 480px) {
+    nav {
+        margin-top:50px;
+    }
+}
 
 /* navbar search icon TODO-sort out this search bar - I do not like how its aligned and need a more semantic name*/
 nav .input-field label i {
@@ -120,12 +118,12 @@ nav ul a {
 
 /* mobile navbar link */
 .side-nav a {
-    color:#0078d2;
+    /*color:#0078d2;*/
+    color:#fff;
 }
 
-
 .side-nav {
-    background-color: rgba(0,0,0,.68);
+    background-color: rgba(33,150,243,.96);
 }
 
 /*====================================================================================================================*/
@@ -176,6 +174,12 @@ form {
 /*text-inside the form*/
 .input-field .prefix ~ input {
     padding-left:5px;
+    height:30px;
+    font-size:11px;
+}
+
+#user_first_name,#user_last_name,#password {
+    border:0;
 }
 
 /*====================================================================================================================*/
@@ -229,6 +233,7 @@ form {
     border:1px solid;
     padding-left:5px;
     font-size:10px;
+    height:30px;
 }
 
 .tabs .tab a, .tabs .tab a.active {
@@ -250,6 +255,7 @@ form {
 /* footer background color */
 footer.page-footer, footer.page-footer .footer-copyright {
     /*background-color: #cccccc;*/
+    font-size:12px;
 }
 
 /* footer icons */
@@ -309,6 +315,17 @@ footer.page-footer, footer.page-footer .footer-copyright {
     background-color: #eceff1;
 }
 
+
+@media screen and (max-width: 480px) {
+    .row .col.s12 {
+        margin:0;
+        padding:5px;
+    }
+
+    #page-footer-container {
+        margin-top:10px;
+    }
+}
 
 
 
