@@ -198,7 +198,9 @@ form {
 /* right form top-nav link */
 .right-form-topnav {
     text-transform: none;
+    color: #0078d2 !important;
 }
+
 
 /* after link is clicked change color */
 #main-menu ul li.selected {
@@ -325,11 +327,6 @@ footer.page-footer, footer.page-footer .footer-copyright {
     #page-footer-container {
         margin-top:10px;
     }
-}
-
-.right-form-topnav {
-    /*font-style: italic;*/
-    color: #0078d2 !important
 }
 
 
