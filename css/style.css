@@ -1,33 +1,34 @@
 /*====================================================================================================================*/
-/* GENERAL BODY STYLING */
+                                                /* Global Styling */
 /*====================================================================================================================*/
+/*TODO-clean up global naming conventions*/
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top:50px;
 }
 
-/*TODO _ NEED MDEIA QUERY TO ADJUST BODY PADDING TOP*/
-/*TODO _ NEED MDEIA QUERY TO ADJUST BODY SECTIONS PADDING SIDES*/
-/*TODO_ BUTTON BACKGROUND AND POSITIONING*/
+.container {
+    width:100%
+}
 
-/* SITE PRIMARY COLOR */
+
+/* IMP PADDING ADJUST THE CLOSES OF ALL ROWS TODO-check this out-what the heck is it there for?????*/
+.container .row {
+    margin: 0;
+}
+
+/* SITE PRIMARY COLOR TODO-get rid of this ridiculous naming convention */
 .aa_blue {
     color:#0078d2;
 }
 
-/* CREATE SPACE BETWEEN SECTIONS */
-#footer_section {
-    margin-top:90px;
-}
-
-
-#news_offers {
+#offers-general {
     margin-top:90px;
     margin-bottom: 45px;
 }
 
-#todays_specials {
+#offers-today {
     margin-top:45px;
 }
 
@@ -35,7 +36,6 @@ body {
 a {
     color: #0078d2;
     font-weight:bolder;
-
 }
 
 /*!* UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK *!*/
@@ -44,155 +44,110 @@ a:hover {
     text-decoration: underline;
 }
 
+/* general icon styling */
+.input-field .prefix {
+    font-size:23px;
+}
+
+/* small icon styling */
+.small-icon {
+    font-size: 15px;
+}
+
+/* general button styling */
+.btn {
+    background-color: #0078d2;
+    /*width:175px;*/
+    color: #fff;
+    font-size:12px;
+    font-weight:200;
+    line-height:35px;
+}
+
+.btn:hover {
+    background-color: #003a6d;
+    color: white;
+}
 /*====================================================================================================================*/
 /* DIV POSITIONING ON PAGE */
 /*====================================================================================================================*/
 
-/* CAROUSEL */
-#poistion1 {
-    width: 100%;
-    height: 100%;
+.relative {
     position: relative;
 }
 
+.absolute {
+    position: absolute;
+    width:100%;
+    /*margin:auto;*/
+    top:90%;
+    /*left:0;*/
+    /*right:0;*/
+    /*bottom:0;*/
+    /*z-index: 0;*/
+}
 
-/*handle mobile*/
-@media only screen and (min-width: 320px)  {
 
-    #position2 {
-        width:80%;
-        top:65%;
-        left:10%;
+@media screen and (min-width: 480px) {
+    .absolute {
         position: absolute;
-
+        width:90%;
+        margin:auto;
+        top:80%;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 2;
     }
-
-    html {
-        font-size: 12px;
-    }
-
-    #login_button {
-        margin-left: 27px;
-    }
-
 }
-
-
-
-/*handle laptop*/
-@media only screen and (min-width: 768px)  {
-
-    #position2 {
-        width:80%;
-        top:65%;
-        left:10%;
-        position: absolute;
-
-    }
-
-    html {
-        font-size: 12px;
-    }
-
-   /*TODO:need media query to handle search button left margin-multiple serach buttons so add some id man jeez*/
-    #login_button {
-        margin-left: 0;
-
-    }
-
-}
-
-/*handle desktop*/
-@media only screen and (min-width: 1900px) {
-
-    #position2{
-        width: 60%;
-        position: absolute;
-        top:47%;
-        left: 20%;
-
-    }
-
-    #login_button {
-        margin-left: 5px;
-        width: 40%;
-    }
-
-
-}
-
-/* GIVE POSITION TWO A SHADOW SO IT APPEARS TO FLOAT ABOVE POSITION 1 */
-#position2 {
-    z-index: 10;
-}
-
-
-
 /*====================================================================================================================*/
-/*NAVBAR*/
+                                                /* Navbar up top */
 /*====================================================================================================================*/
 
-/* SEARCH ICON COLOR */
+/* navbar search icon TODO-sort out this search bar - I do not like how its aligned and need a more semantic name*/
 nav .input-field label i {
     color:#0078d2;
 }
 
-/* NAVBAR LINK TEXT SIZE */
+/* navbar link */
 nav ul a {
-    color: #0078d2;
-    font-weight:bolder;
     font-size: large;
 }
 
-/* SIDE NAV LINK COLOR */
+/* mobile navbar link */
 .side-nav a {
     color:#0078d2;
 }
 
-/* NAVBAR LINKS CASE SETTING */
-.remove_assigned_case {
-    text-transform: none;
 
-}
-
-
-nav .brand-logo {
-    font-weight:bolder;
-    /*font-size: 25px;*/
+.side-nav {
+    background-color: rgba(0,0,0,.68);
 }
 
 /*====================================================================================================================*/
-/* CAROUSEL */
+                                                /* Carousel */
 /*====================================================================================================================*/
-
-/*CAROUSEL TEXT STYLE*/
-.carousel_text_style {
-    font-weight:400;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+/* main container around the carousel */
+.carousel-container {
+    padding:0 !important;
 }
 
-/*HIDE CAROUSEL CONTROLS*/
+/* sub-text inside of carousel */
+.caro-sub-text {
+    /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+}
+
+/* carousel controls*/
 .slider .indicators .indicator-item, .slider .indicators .indicator-item.active {
-    background-color: #eceff1;
+    display: none;
 }
 
 /*====================================================================================================================*/
-/* LEFT FORM */
+                                                /* Left Form*/
 /*====================================================================================================================*/
 
-/*LEFT FORM  */
-.aa_blue_gradient {
-
-    /* UPRIGHT */
-    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+98,207cca+100,7db9e8+100 *!*/
-    /*background: rgb(30,87,153); !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 98%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 98%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 98%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); !* IE6-9 *!*/
-
-    /* REVERSE */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,207cca+0,2989d8+2,1e5799+100 */
+/* container around the left form  */
+.left-form-container {
     background: rgb(125,185,232); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(125,185,232,1) 0%, rgba(32,124,202,1) 0%, rgba(41,137,216,1) 2%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -200,229 +155,122 @@ nav .brand-logo {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
 }
 
-/*FORM PADDING*/
 form {
-    padding:10px;
-    padding-bottom: 30px;
+    padding:10px 10px 30px 10px;
 }
 
-
-.blue-grey.lighten-5 {
-    margin-top: 10px;
-}
-
-/*CHECK BOX  BORDER COLOR*/
+/*  remember me check box */
 [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
     border-color: black;
 }
 
-/*CHECK BOX TEXT SIZE*/
+/*  remember me text */
 .input-field.col label {
     font-size: 11px;
 }
 
-/* IMP PADDING ADJUST THE CLOSES OF ALL ROWS */
-.container .row {
-    margin-bottom: 0;
+/*text-inside the form*/
+.input-field .prefix ~ input {
+    padding-left:5px;
 }
 
 /*====================================================================================================================*/
-/* RIGHT FORM */
+                                            /* Right Form */
 /*====================================================================================================================*/
 
-/*HEADER TABS BACKGROUND COLOR*/
-.grey_gradient {
-    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#596a72+0,cedce7+100 *!*/
-    /*background: rgb(89,106,114); !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  rgba(89,106,114,1) 0%, rgba(206,220,231,1) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=0 ); !* IE6-9 *!*/
-
-
-
-    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100 *!*/
-    /*background: rgb(206,220,231); !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); !* IE6-9 *!*/
-
-
-
-    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100 *!*/
-    /*background: rgb(238,238,238); !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); !* IE6-9 *!*/
-
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+82 */
+/* container around the right form top-nav  */
+.right-form-topnav-container, #main-menu  {
     background: rgb(238,238,238); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 82%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 82%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
-
-
-    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+0,7d7e7d+100 *!*/
-    /*background: rgb(14,14,14); !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); !* IE6-9 *!*/
-
-
 }
 
-/*TODO _ THIS COLOR SHOULD MATCH UP TO THE LEFT FORM*/
-/* TAB LINKS COLOR ON HOVER */
-.tab:hover {
-    background-color: #0078d2;
+/* right form top-nav link */
+.right-form-topnav {
+    text-transform: none;
 }
 
-/* HEADER LINKS TEXT COLOR */
-.tabs .tab a {
-    color: #0078d2;
-}
-
-/* HEADER LINKS TEXT COLOR ON HOVER */
-.tabs .tab a:hover, .tabs .tab a.active {
-    color: white;
-}
-
-/* RIGHT FORM ICONS */
-.input-field .pref {
-
-}
-
-/* INPUT BOX BORDER */
-.input-field .prefix ~ input {
-    border:solid 1px;
-
-}
-
-/* INPUT PLACEHOLDER PADDING */
-.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
-    padding-left:10px;
-
-}
-
-/* LOGIN PLACEHOLDER PADDING */
-.input-field .prefix ~ input {
-    padding-left:10px;
-}
-
-/*DROPDOWN BORDER*/
-.select-wrapper input.select-dropdown {
-    border:solid 1px;
-    padding-left:10px;
-}
-
-/*==================================*/
-
-/*TABS STYLING WHEN ACTIVE */
-/* TAB BEFORE CLICK */
-#menu li {
-    /*background: black;*/
-}
-
-
-/* TAB AFTER CLICK */
-#menu ul li.selected {
+/* after link is clicked change color */
+#main-menu ul li.selected {
     background-color: #0078d2;
     color:#FFFFFF;
 }
 
-
-/* TAB ON HOVER */
-#menu a:hover {
+/* all right form links on hover */
+#main-menu a:hover {
     background-color: #0078d2;
     color:#FFFFFF;
+    text-decoration: none;
 }
 
-
-/* TAB ON CLICK */
-#menu a:active {
-    background-color: #eceff1;
-    color:white;
-}
-
-/*TODO _ THIS COLOR SHOULD MATCH UP TO THE TOP TAB COLOR*/
-/* TAB LINKS UNDERLINE COLOR */
+/* bottom nav */
 .tabs .indicator {
-    background-color: #cccccc;
+    background-color: transparent;
 
 }
-/*==================================*/
+
+/* input boxes */
+.input-field .prefix ~ input {
+    border:1px solid;
+}
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+    /*margin-left:60px;*/
+    padding-left:5px;
+    margin-right:5px;
+}
+
+.select-wrapper input.select-dropdown {
+    border:1px solid;
+    padding-left:5px;
+    font-size:10px;
+}
+
+.tabs .tab a, .tabs .tab a.active {
+    font-size:11px;
+}
+
+/* right form header media */
+@media screen and (min-width: 480px) {
+    .tabs .tab a, .tabs .tab a.active {
+        font-size:16px;
+    }
+}
+
 
 /*====================================================================================================================*/
-/* ICONS */
+                                                /* Footer */
 /*====================================================================================================================*/
 
-/*FORM ICONS GENERAL SIZE*/
-.input-field .prefix {
-    font-size:23px;
+/* footer background color */
+footer.page-footer, footer.page-footer .footer-copyright {
+    /*background-color: #cccccc;*/
 }
 
-/*SMALL OPEN LINK FONT SIZE*/
-.small_open_icon {
-    font-size: 15px;
-}
-
-.small_local_offer_icon {
-    font-size: 15px;
-}
-
-/* BOTTOM FOOTER ICONS */
+/* footer icons */
 .footer_icon {
     font-size:30px;
     margin-left: 5px;
     margin-right: 5px;
     color:#0078d2;
 }
-/*====================================================================================================================*/
-/* PAGE FOOTER */
-/*====================================================================================================================*/
-/* BACKGROUND COLOR AND FONT SIZE */
-footer.page-footer, footer.page-footer .footer-copyright {
-    /*background-color: #1e589a;*/
-    background-color: #d0dae0;
-    font-size: 12px;
+
+/* container around all the elements in the footer */
+#page-footer-container {
+    margin-top:90px;
+    padding-bottom:10px;
+    background-color: #cccccc;
 }
 
 
-/* BOTOM FOOTER TEXT COLOR */
-.footer-copyright .container {
-    color: #1e589a;
-}
 
 
-/*====================================================================================================================*/
-/* BUTTONS - THOSE WITH DIFF SIZING HAVE BEEN ASSIGNED AN ID */
-/*====================================================================================================================*/
-/* BUTTON WIDTH */
-.btn {
-    background-color: #0078d2;
-    width:180px;
-    height:45px;
-    padding-top: 5px;
 
-}
 
-/* BUTTON HOVER */
-.btn:hover, .btn-large:hover, #login_button:hover {
-    background-color: #003a6d;
-    color: white;
-}
 
-/* LOGIN BUTTON */
-#login_button {
-    width:140px;
-    color: white;
-}
 
+/*TODO- style date picker and whatever else left below*/
 /*====================================================================================================================*/
 /* DATE PICKER STYLING */
 /*====================================================================================================================*/
@@ -457,20 +305,7 @@ footer.page-footer, footer.page-footer .footer-copyright {
     background-color: #eceff1;
 }
 
-/*====================================================================================================================*/
-/* QUICK FIX HACKS */
-/*====================================================================================================================*/
-/*TODO-handle this!!!*/
-/*TODAYS SPECIALS WAS PUSHING OUT*/
-#quickmargin {
-    margin-left: 10px;
-}
 
-
-
-.slider .indicators .indicator-item, .slider .indicators .indicator-item.active {
-    background-color:#0078d2;;
-}
 
 
 

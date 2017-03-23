@@ -7,8 +7,8 @@ $( document ).ready(function(){
     $('ul.tabs').tabs();
 
     // ENABLE TAB STYLING WHEN IN USE
-    $('#menu ul li a').click(function (ev) {
-        $('#menu ul li').removeClass('selected');
+    $('#main-menu ul li a').click(function (ev) {
+        $('#main-menu ul li').removeClass('selected');
         $(ev.currentTarget).parent('li').addClass('selected');
     });
 
@@ -34,4 +34,6 @@ $( document ).ready(function(){
     $('select').material_select();
 
 });
+
+
 
