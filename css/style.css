@@ -8,10 +8,14 @@ body {
     padding-top:50px;
 }
 
-.container {
-    width:100%
-}
 
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width:100%
+    }
+}
 
 /* IMP PADDING ADJUST THE CLOSES OF ALL ROWS TODO-check this out-what the heck is it there for?????*/
 .container .row {
