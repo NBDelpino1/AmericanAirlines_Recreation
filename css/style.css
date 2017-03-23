@@ -327,7 +327,10 @@ footer.page-footer, footer.page-footer .footer-copyright {
     }
 }
 
-
+.right-form-topnav {
+    /*font-style: italic;*/
+    color: #0078d2 !important
+}
 
 
 
