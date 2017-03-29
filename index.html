@@ -20,8 +20,7 @@
 
 </head>
 <body>
-
-<div class="container relative">
+    <div class="container relative">
         <!--==============================================================-->
         <!-- NAVBAR ROW -->
         <nav class="container-fluid z-depth-0">
@@ -92,474 +91,453 @@
                 </div>
             </div>
         </div>
-        <!--==============================================================-->
 
-<div class="container absolute">
-        <!--==============================================================-->
-        <!-- FORM ROW -->
-        <div class="row z-depth-1">
-
-            <!-- LEFT FORM -->
-            <div class="col s12 m4 left-form-container">
-                <form>
-                    <p id="loginlogo" class="center-align white-text">CUSTOMER LOGIN</p>
-                    <div class="row">
-                        <div class="input-field col s12 m10">
-                            <i class="material-icons prefix white-text">perm_identity</i>
-                            <input placeholder=" Username" id="user_first_name" type="text" class="validate #ffffff white black_text">
-                            <label for="user_first_name"></label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m10">
-                            <i class="material-icons prefix white-text">perm_identity</i>
-                            <input placeholder="Last Name" id="user_last_name" type="text" class="validate #ffffff white black_text">
-                            <label for="user_last_name"></label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m10">
-                            <i class="material-icons prefix white-text">lock_outline</i>
-                            <input placeholder=" Password" id="password" type="password" class="validate #ffffff white black_text">
-                            <label for="password"></label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s6 m6">
-                            <input type="checkbox" id="remeber_me_login"/>
-                            <label for="remeber_me_login" class="black-text">Remember Me</label>
-                        </div>
-                        <div class="input-field col s6 m6 ">
-                            <a class="waves-effect waves-light btn" id="login_button">Login</a>
-                            <label></label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- RIGHT FORM -->
-            <div class="col s12 m8 #ffffff white">
-                <div class="row">
-
-                    <!-- MAIN MENU -->
-                    <div id="main-menu" class="col s12" >
-                        <ul class="tabs #cfd8dc current_page_itemm right-form-topnav-container">
-                            <li class="tab col s3 current_page_item"><a href="#book_flights_section" class="active black-text">Book Flights</a></li>
-                            <li class="tab col s3"><a href="#my_trips_checkin_section" class="black-text">Check In</a></li>
-                            <li class="tab col s3"><a href="#flight_status_section" class="black-text">Flight Status</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- BOOK FLIGHTS SECTION -->
-                    <div id="book_flights_section" class="col s12">
-                        <!-- BOOK FLIGHTS SECTION (PARENT)-->
+        <div class="container absolute">
+            <!-- FORM ROW -->
+            <div class="row z-depth-1">
+                <!-- LEFT FORM -->
+                <div class="col s12 m4 left-form-container">
+                    <form>
+                        <p id="loginlogo" class="center-align white-text">CUSTOMER LOGIN</p>
                         <div class="row">
-                            <div class="col s12">
-                                <ul class="tabs">
-                                    <li class="tab col s3"><a href="#round_trip" class="active right-form-topnav">Round trip</a></li>
-                                    <li class="tab col s3"><a href="#one_way" class="right-form-topnav">One Way</a></li>
-                                    <li class="tab col s3"><a href="#rtrip_and_hotel"class="right-form-topnav">Trip &amp Hotel</a></li>
-                                </ul>
-                            </div>
-                            <!-- ROUND TRIP SECTION (CHILD OF BOOK FLIGHTS)-->
-                            <div id="round_trip" class="col s12">
-                                <form class="passenger">
-                                    <!-- TOP -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-round_trip_from_location" class="autocomplete">
-                                            <label for="autocomplete-input-round_trip_from_location">From</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-round_trip_to_location" class="autocomplete">
-                                            <label for="autocomplete-input-round_trip_to_location">To</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">people outline</i>
-                                            <select>
-                                                <option value="" disabled selected>Number of passengers</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                    <!-- BOTTOM -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">date_range</i>
-                                            <input id="round-trip-depart_date" type="date" class="datepicker">
-                                            <label for="round-trip-depart_date">Depart</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">date_range</i>
-                                            <input id="round-trip-return_date" type="date" class="datepicker">
-                                            <label for="round-trip-return_date">Return</label>
-                                        </div>
-                                        <div class="input-field col s12 m4 right-align">
-                                            <a class="waves-effect waves-light btn">Search</a>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <!-- ONE WAY SECTION (CHILD OF BOOK FLIGHTS)-->
-                            <div id="one_way" class="col s12">
-                                <form class="passenger">
-                                    <!-- TOP -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-one_way_from_location" class="autocomplete">
-                                            <label for="autocomplete-input-one_way_from_location">From</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-one_way_to_location" class="autocomplete">
-                                            <label for="autocomplete-input-one_way_to_location">To</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">people outline</i>
-                                            <select>
-                                                <option value="" disabled selected>Number of passengers</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                    <!-- BOTTOM -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">date_range</i>
-                                            <input id="one_way_depart_date" type="date" class="datepicker">
-                                            <label for="one_way_depart_date">Depart</label>
-                                        </div>
-                                        <div class="input-field col s12 m4"></div>
-                                        <div class="input-field col s12 m4 right-align">
-                                            <a class="waves-effect waves-light btn">Search</a>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <!-- R/TRIP & HOTEL SECTION ( CHILD OF BOOK FLIGHTS) -->
-                            <div id="rtrip_and_hotel" class="col s12">
-                                <form class="passenger">
-                                    <!-- TOP -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-round_trip_and_hotel_from_location" class="autocomplete">
-                                            <label for="autocomplete-input-round_trip_and_hotel_from_location">From</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-round_trip_and_hotel_to_location" class="autocomplete">
-                                            <label for="autocomplete-input-round_trip_and_hotel_to_location">To</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">people outline</i>
-                                            <select>
-                                                <option value="" disabled selected>Number of passengers</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                    <!-- MIDDLE -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">date_range</i>
-                                            <input id="round_trip_and_hotel_from_date" type="date" class="datepicker">
-                                            <label for="round_trip_and_hotel_from_date">From</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">date_range</i>
-                                            <input id="round_trip_and_hotel_to_date" type="date" class="datepicker">
-                                            <label for="round_trip_and_hotel_to_date">To</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">airplanemode_active</i>
-                                            <select>
-                                                <option value="" disabled selected>Fare Preference</option>
-                                                <option value="1">Coach</option>
-                                                <option value="2">Business</option>
-                                                <option value="3">First</option>
-                                            </select>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                    <!-- BOTTOM -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4"></div>
-                                        <div class="input-field col s12 m4"></div>
-                                        <div class="input-field col s12 m4 right-align">
-                                            <a class="waves-effect waves-light btn">Search</a>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="input-field col s12 m10">
+                                <i class="material-icons prefix white-text">perm_identity</i>
+                                <input placeholder=" Username" id="user_first_name" type="text" class="validate #ffffff white black_text">
+                                <label for="user_first_name"></label>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- MY TRIPS / CHECK-IN SECTION -->
-                    <div id="my_trips_checkin_section" class="col s12">
-                        <br>
                         <div class="row">
-                            <div class="col s12">
-                                <form class="passenger">
-                                    <!-- TOP -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">perm_identity</i>
-                                            <input id="my_trips_first_name" type="text" class="validate">
-                                            <label for="my_trips_first_name">First Name</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">perm_identity</i>
-                                            <input id="my_trips_last_name" type="text" class="validate">
-                                            <label for="my_trips_last_name">Last Name</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">receipt</i>
-                                            <input id="my_trips_record_locator" type="text" class="validate">
-                                            <label for="my_trips_record_locator">Record Locator</label>
-                                        </div>
-                                    </div>
-                                    <!-- BOTTOM -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4"></div>
-                                        <div class="input-field col s12 m4"></div>
-                                        <div class="input-field col s12 m4 right-align">
-                                            <a class="waves-effect waves-light btn">Search</a>
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="input-field col s12 m10">
+                                <i class="material-icons prefix white-text">perm_identity</i>
+                                <input placeholder="Last Name" id="user_last_name" type="text" class="validate #ffffff white black_text">
+                                <label for="user_last_name"></label>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- FLIGHT STATUS SECTION -->
-                    <div id="flight_status_section" class="col s12">
-                        <br>
                         <div class="row">
-                            <div class="col s12">
-                                <form class="passenger">
-                                    <!-- TOP -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">airplanemode_active</i>
-                                            <input id="flight_status_flight_number" type="text" class="validate">
-                                            <label for="flight_status_flight_number">Flight Number</label>
+                            <div class="input-field col s12 m10">
+                                <i class="material-icons prefix white-text">lock_outline</i>
+                                <input placeholder=" Password" id="password" type="password" class="validate #ffffff white black_text">
+                                <label for="password"></label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s6 m6">
+                                <input type="checkbox" id="remeber_me_login"/>
+                                <label for="remeber_me_login" class="black-text">Remember Me</label>
+                            </div>
+                            <div class="input-field col s6 m6 ">
+                                <a class="waves-effect waves-light btn" id="login_button">Login</a>
+                                <label></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="col s12 m8 #ffffff white">
+                    <div class="row">
+
+                        <!-- MAIN MENU -->
+                        <div id="main-menu" class="col s12" >
+                            <ul class="tabs #cfd8dc current_page_itemm right-form-topnav-container">
+                                <li class="tab col s3 current_page_item"><a href="#book_flights_section" class="active black-text">Book Flights</a></li>
+                                <li class="tab col s3"><a href="#my_trips_checkin_section" class="black-text">Check In</a></li>
+                                <li class="tab col s3"><a href="#flight_status_section" class="black-text">Flight Status</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- BOOK FLIGHTS SECTION -->
+                        <div id="book_flights_section" class="col s12">
+                            <!-- BOOK FLIGHTS SECTION (PARENT)-->
+                            <div class="row">
+                                <div class="col s12">
+                                    <ul class="tabs">
+                                        <li class="tab col s3"><a href="#round_trip" class="active right-form-topnav">Round trip</a></li>
+                                        <li class="tab col s3"><a href="#one_way" class="right-form-topnav">One Way</a></li>
+                                        <li class="tab col s3"><a href="#rtrip_and_hotel"class="right-form-topnav">Trip &amp Hotel</a></li>
+                                    </ul>
+                                </div>
+                                <!-- ROUND TRIP SECTION (CHILD OF BOOK FLIGHTS)-->
+                                <div id="round_trip" class="col s12">
+                                    <form class="passenger">
+                                        <!-- TOP -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-round_trip_from_location" class="autocomplete">
+                                                <label for="autocomplete-input-round_trip_from_location">From</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-round_trip_to_location" class="autocomplete">
+                                                <label for="autocomplete-input-round_trip_to_location">To</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">people outline</i>
+                                                <select>
+                                                    <option value="" disabled selected>Number of passengers</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <label></label>
+                                            </div>
                                         </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-flight_status_from_location" class="autocomplete">
-                                            <label for="autocomplete-input-flight_status_from_location">From</label>
+                                        <!-- BOTTOM -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">date_range</i>
+                                                <input id="round-trip-depart_date" type="date" class="datepicker">
+                                                <label for="round-trip-depart_date">Depart</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">date_range</i>
+                                                <input id="round-trip-return_date" type="date" class="datepicker">
+                                                <label for="round-trip-return_date">Return</label>
+                                            </div>
+                                            <div class="input-field col s12 m4 right-align">
+                                                <a class="waves-effect waves-light btn">Search</a>
+                                                <label></label>
+                                            </div>
                                         </div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">add_location</i>
-                                            <input type="text" id="autocomplete-input-flight_status_to_location" class="autocomplete">
-                                            <label for="autocomplete-input-flight_status_to_location">To</label>
+                                    </form>
+                                </div>
+
+                                <!-- ONE WAY SECTION (CHILD OF BOOK FLIGHTS)-->
+                                <div id="one_way" class="col s12">
+                                    <form class="passenger">
+                                        <!-- TOP -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-one_way_from_location" class="autocomplete">
+                                                <label for="autocomplete-input-one_way_from_location">From</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-one_way_to_location" class="autocomplete">
+                                                <label for="autocomplete-input-one_way_to_location">To</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">people outline</i>
+                                                <select>
+                                                    <option value="" disabled selected>Number of passengers</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <label></label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- BOTTOM -->
-                                    <div class="row">
-                                        <div class="input-field col s12 m4"></div>
-                                        <div class="input-field col s12 m4">
-                                            <i class="material-icons prefix aa_blue">date_range</i>
-                                            <input id="flight_status_date" type="date" class="datepicker">
-                                            <label for="flight_status_date">Date</label>
+                                        <!-- BOTTOM -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">date_range</i>
+                                                <input id="one_way_depart_date" type="date" class="datepicker">
+                                                <label for="one_way_depart_date">Depart</label>
+                                            </div>
+                                            <div class="input-field col s12 m4"></div>
+                                            <div class="input-field col s12 m4 right-align">
+                                                <a class="waves-effect waves-light btn">Search</a>
+                                                <label></label>
+                                            </div>
                                         </div>
-                                        <div class="input-field col s12 m4 right-align">
-                                            <a class="waves-effect waves-light btn">Search</a>
-                                            <label></label>
+                                    </form>
+                                </div>
+
+                                <!-- R/TRIP & HOTEL SECTION ( CHILD OF BOOK FLIGHTS) -->
+                                <div id="rtrip_and_hotel" class="col s12">
+                                    <form class="passenger">
+                                        <!-- TOP -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-round_trip_and_hotel_from_location" class="autocomplete">
+                                                <label for="autocomplete-input-round_trip_and_hotel_from_location">From</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-round_trip_and_hotel_to_location" class="autocomplete">
+                                                <label for="autocomplete-input-round_trip_and_hotel_to_location">To</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">people outline</i>
+                                                <select>
+                                                    <option value="" disabled selected>Number of passengers</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <label></label>
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
+                                        <!-- MIDDLE -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">date_range</i>
+                                                <input id="round_trip_and_hotel_from_date" type="date" class="datepicker">
+                                                <label for="round_trip_and_hotel_from_date">From</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">date_range</i>
+                                                <input id="round_trip_and_hotel_to_date" type="date" class="datepicker">
+                                                <label for="round_trip_and_hotel_to_date">To</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">airplanemode_active</i>
+                                                <select>
+                                                    <option value="" disabled selected>Fare Preference</option>
+                                                    <option value="1">Coach</option>
+                                                    <option value="2">Business</option>
+                                                    <option value="3">First</option>
+                                                </select>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                        <!-- BOTTOM -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4"></div>
+                                            <div class="input-field col s12 m4"></div>
+                                            <div class="input-field col s12 m4 right-align">
+                                                <a class="waves-effect waves-light btn">Search</a>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MY TRIPS / CHECK-IN SECTION -->
+                        <div id="my_trips_checkin_section" class="col s12">
+                            <br>
+                            <div class="row">
+                                <div class="col s12">
+                                    <form class="passenger">
+                                        <!-- TOP -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">perm_identity</i>
+                                                <input id="my_trips_first_name" type="text" class="validate">
+                                                <label for="my_trips_first_name">First Name</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">perm_identity</i>
+                                                <input id="my_trips_last_name" type="text" class="validate">
+                                                <label for="my_trips_last_name">Last Name</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">receipt</i>
+                                                <input id="my_trips_record_locator" type="text" class="validate">
+                                                <label for="my_trips_record_locator">Record Locator</label>
+                                            </div>
+                                        </div>
+                                        <!-- BOTTOM -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4"></div>
+                                            <div class="input-field col s12 m4"></div>
+                                            <div class="input-field col s12 m4 right-align">
+                                                <a class="waves-effect waves-light btn">Search</a>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FLIGHT STATUS SECTION -->
+                        <div id="flight_status_section" class="col s12">
+                            <br>
+                            <div class="row">
+                                <div class="col s12">
+                                    <form class="passenger">
+                                        <!-- TOP -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">airplanemode_active</i>
+                                                <input id="flight_status_flight_number" type="text" class="validate">
+                                                <label for="flight_status_flight_number">Flight Number</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-flight_status_from_location" class="autocomplete">
+                                                <label for="autocomplete-input-flight_status_from_location">From</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">add_location</i>
+                                                <input type="text" id="autocomplete-input-flight_status_to_location" class="autocomplete">
+                                                <label for="autocomplete-input-flight_status_to_location">To</label>
+                                            </div>
+                                        </div>
+                                        <!-- BOTTOM -->
+                                        <div class="row">
+                                            <div class="input-field col s12 m4"></div>
+                                            <div class="input-field col s12 m4">
+                                                <i class="material-icons prefix aa_blue">date_range</i>
+                                                <input id="flight_status_date" type="date" class="datepicker">
+                                                <label for="flight_status_date">Date</label>
+                                            </div>
+                                            <div class="input-field col s12 m4 right-align">
+                                                <a class="waves-effect waves-light btn">Search</a>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--==============================================================-->
-        <!--==============================================================-->
-        <!--NEWS / OFFERS ROW-->
-        <div class="row" id="offers-general">
-            <div class="col s12 m4 ">
-                <h6 class="grey-text">NEWS AND OFFERS</h6>
-                <p><a href="">Samsung Galaxy Note banned from flying  >></a></p>
-                <p><a href="">Experience our new Admirals Club&reg; in Chicago >></a></p>
-                <p><a href="">Earn up to 25,000 bonus miles with Sprint <i class="material-icons small-icon">open_in_new</i></a></p>
-                <p><a href="">More specials <i class="material-icons small-icon">local_offer</i></a></p>
+            <!--==============================================================-->
+            <!--==============================================================-->
+            <!--NEWS / OFFERS ROW-->
+            <div class="row" id="offers-general">
+                <div class="col s12 m4 ">
+                    <h6 class="grey-text">NEWS AND OFFERS</h6>
+                    <p><a href="">Samsung Galaxy Note banned from flying  >></a></p>
+                    <p><a href="">Experience our new Admirals Club&reg; in Chicago >></a></p>
+                    <p><a href="">Earn up to 25,000 bonus miles with Sprint <i class="material-icons small-icon">open_in_new</i></a></p>
+                    <p><a href="">More specials <i class="material-icons small-icon">local_offer</i></a></p>
 
-            </div>
-            <div class="col s12 m4">
-                <h6 class="header grey-text">TURN MILES INTO MEMORIES</h6>
-                <div class="card horizontal z-depth-0">
-                    <div class="card-image">
-                        <img src="images/NEWS1.jpg">
+                </div>
+                <div class="col s12 m4">
+                    <h6 class="header grey-text">TURN MILES INTO MEMORIES</h6>
+                    <div class="card horizontal z-depth-0">
+                        <div class="card-image">
+                            <img src="images/NEWS1.jpg">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p class="black-text">Join the Advantage&reg; program</p>
+                                <p><a href="">Sign up today <i class="material-icons small-icon">open_in_new</i></a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-stacked">
+                </div>
+                <div class="col s12 m4">
+                    <h6 class="header grey-text">LIMITED-TIME OFFER</h6>
+                    <div class="card horizontal z-depth-0">
+                        <div class="card-image">
+                            <img src="images/NEWS2.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p class="black-text">Earn 50,000 bonus miles after qualifying purchases</p>
+                                <p><a href="">Learn more <i class="material-icons small-icon">open_in_new</i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--==============================================================-->
+            <!--==============================================================-->
+            <!-- TODAY'S SPECIALS ROW -->
+            <div class="row" id="offers-today">
+                <h5 class="aa_blue">Todays Specials</h5>
+                <div class="col s12 m4">
+                    <div class="card small z-depth-0">
+                        <div class="card-image">
+                            <img src="images/SPECIALS1.jpeg">
+                        </div>
                         <div class="card-content">
-                            <p class="black-text">Join the Advantage&reg; program</p>
-                            <p><a href="">Sign up today <i class="material-icons small-icon">open_in_new</i></a></p>
+                            <h6 class="header grey-text">FROM CHECK-IN TO CAROUSEL </h6>
+                            <p class="black-text">Track your bags from your smartphone, laptop and tablet</p>
+                            <p><a href="">Get started >></a> </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col s12 m4">
-                <h6 class="header grey-text">LIMITED-TIME OFFER</h6>
-                <div class="card horizontal z-depth-0">
-                    <div class="card-image">
-                        <img src="images/NEWS2.png">
-                    </div>
-                    <div class="card-stacked">
+
+                <div class="col s12 m4">
+                    <div class="card small z-depth-0">
+                        <div class="card-image">
+                            <img src="images/SPECIALS2.jpeg">
+                        </div>
                         <div class="card-content">
-                            <p class="black-text">Earn 50,000 bonus miles after qualifying purchases</p>
-                            <p><a href="">Learn more <i class="material-icons small-icon">open_in_new</i></a></p>
+                            <h6 class="header grey-text">CLEAR FOR TAKE OFF</h6>
+                            <p class="black-text">Up to 35% off with Avis and Budget, plus earn bonus miles</p>
+                            <p><a href="">Book your car today<i class="material-icons small-icon">open_in_new</i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card small z-depth-0">
+                        <div class="card-image">
+                            <img src="images/SPECIALS3.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <h6 class="header grey-text">SAVE ON VACATIONS 2017</h6>
+                            <p class="black-text">Ring in 2017 with nightly savings and earn Advantage&reg; bonus with AVacations</p>
+                            <p><a href="">Book vacation<i class="material-icons small-icon">open_in_new</i></a></p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--==============================================================-->
+            <!--==============================================================-->
+            <!-- FOOTER ROW -->
+            <footer class="page-footer"  id="page-footer-container">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col s3 m3">
+                            <h6>HELP</h6>
+                            <ul>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Contact American</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Receipts and refunds</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">FAQs</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Agency reference</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Cargo<i class="material-icons small-icon">open_in_new</i></a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Baggage and optional service fees</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Customer service and contingency plans</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Conditions of carriage and tariffs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s3 m3">
+                            <h6>ABOUT AMERICAN</h6>
+                            <ul>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">About us</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Careers<i class="material-icons small-icon">open_in_new</i></a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Newsroom<i class="material-icons small-icon">open_in_new</i></a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Legal, privacy, copyright</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Browser compatibility</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Web accessability</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s3 m3">
+                            <h6 class="blue-grey-text text-darken-4">EXTRAS</h6>
+                            <ul>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Business programs</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">Gift cards<i class="material-icons small-icon">open_in_new</i></a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">American Airlines credit card</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">rip insurance</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!">CoBrowse</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s3 m3">
+                            <h6>NICK DELPINO</h6>
+                            <ul>
+                                <li><a class="blue-grey-text text-darken-1" href="https://www.aa.com/homePage.do" target="_blank">Build Inspiration</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="#!"></a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="https://github.com/NBDelpino1/prismairlines" target="_blank">GitHub</a></li>
+                                <li><a class="blue-grey-text text-darken-1" href="https://www.linkedin.com/in/nicholas-delpino-55063bbb" target="_blank">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--==============================================================-->
         </div>
-        <!--==============================================================-->
-        <!--==============================================================-->
-        <!-- TODAY'S SPECIALS ROW -->
-        <div class="row" id="offers-today">
-            <h5 class="aa_blue">Todays Specials</h5>
-            <div class="col s12 m4">
-                <div class="card small z-depth-0">
-                    <div class="card-image">
-                        <img src="images/SPECIALS1.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <h6 class="header grey-text">FROM CHECK-IN TO CAROUSEL </h6>
-                        <p class="black-text">Track your bags from your smartphone, laptop and tablet</p>
-                        <p><a href="">Get started >></a> </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card small z-depth-0">
-                    <div class="card-image">
-                        <img src="images/SPECIALS2.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <h6 class="header grey-text">CLEAR FOR TAKE OFF</h6>
-                        <p class="black-text">Up to 35% off with Avis and Budget, plus earn bonus miles</p>
-                        <p><a href="">Book your car today<i class="material-icons small-icon">open_in_new</i></a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card small z-depth-0">
-                    <div class="card-image">
-                        <img src="images/SPECIALS3.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <h6 class="header grey-text">SAVE ON VACATIONS 2017</h6>
-                        <p class="black-text">Ring in 2017 with nightly savings and earn Advantage&reg; bonus with AVacations</p>
-                        <p><a href="">Book vacation<i class="material-icons small-icon">open_in_new</i></a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--==============================================================-->
-        <!--==============================================================-->
-        <!-- FOOTER ROW -->
-        <footer class="page-footer"  id="page-footer-container">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col s3 m3">
-                        <h6>HELP</h6>
-                        <ul>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Contact American</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Receipts and refunds</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">FAQs</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Agency reference</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Cargo<i class="material-icons small-icon">open_in_new</i></a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Baggage and optional service fees</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Customer service and contingency plans</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Conditions of carriage and tariffs</a></li>
-                        </ul>
-                    </div>
-                    <div class="col s3 m3">
-                        <h6>ABOUT AMERICAN</h6>
-                        <ul>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">About us</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Careers<i class="material-icons small-icon">open_in_new</i></a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Newsroom<i class="material-icons small-icon">open_in_new</i></a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Legal, privacy, copyright</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Browser compatibility</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Web accessability</a></li>
-                        </ul>
-                    </div>
-                    <div class="col s3 m3">
-                        <h6 class="blue-grey-text text-darken-4">EXTRAS</h6>
-                        <ul>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Business programs</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">Gift cards<i class="material-icons small-icon">open_in_new</i></a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">American Airlines credit card</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">rip insurance</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!">CoBrowse</a></li>
-                        </ul>
-                    </div>
-                    <div class="col s3 m3">
-                        <h6>NICK DELPINO</h6>
-                        <ul>
-                            <li><a class="blue-grey-text text-darken-1" href="https://www.aa.com/homePage.do" target="_blank">Build Inspiration</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="#!"></a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="https://github.com/NBDelpino1/prismairlines" target="_blank">GitHub</a></li>
-                            <li><a class="blue-grey-text text-darken-1" href="https://www.linkedin.com/in/nicholas-delpino-55063bbb" target="_blank">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!--<div class="container">-->
-                <!--<div class="row">-->
-                    <!--<div class="col s7">-->
-                        <!--<a href="#"> Built by Nick Delpino 2017</a>-->
-                    <!--</div>-->
-                    <!--<div class="col s5">-->
-                        <!--<a class="grey-text text-lighten-4 right" href="#!"><i class="fa fa-youtube footer_icon"></i></a>-->
-                        <!--<a class="grey-text text-lighten-4 right" href="#!"><i class="fa fa-twitter footer_icon"></i></a>-->
-                        <!--<a class="grey-text text-lighten-4 right" href="#!"><i class="fa fa-facebook-official footer_icon"></i></a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-        </footer>
-        <!--==============================================================-->
-</div>
-
-
-</div>
-
+    </div>
     <!-- VERY IMP!!! jQuery is needed to make things work -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <!-- My Scripts -->
     <script src="js/app.js"></script>
-
 </body>
 </html>
 
